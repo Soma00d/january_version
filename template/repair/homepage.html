@@ -1,0 +1,105 @@
+<div class="section_container">
+    <div class="title title_main">Welcome to repair mode</div>
+    
+    <div class="choose_section_repair">
+        <div class="bt_section diagnostic">Diagnostic</div>
+        <div class="bt_section finaltest">Final Test</div>
+        <div class="bt_section history">History</div>
+    </div>
+    
+    <div class="bloc_container">
+        <div class="bloc login_diag hidden">
+            <div class="title_bloc">Login Diagnostic</div>
+            <div class="info_bloc">
+                User SSO: 
+                <span class="input_zone blue">
+                    <input id="user_sso_input_diag" class="inp1" type="text" value="" placeholder="User SSO"/>
+                </span><br>
+                Part Number: 
+                <span class="input_zone blue">
+                    <input id="part_number_input_diag" class="inp2" type="text" value="" placeholder="Part number"/>
+                </span><br>
+                Serial Number: 
+                <span class="input_zone blue">
+                    <input id="serial_number_input_diag" class="inp3" type="text" value="" placeholder="Serial Number"/>
+                </span><br>
+                Manufacturing Date: 
+                <span class="input_zone blue">
+                    <input id="manufacturing_date_input_diag" class="inp3" type="date" value="" />
+                </span><br>
+            </div>
+            <div class="bouton_grey" id="send_info_login_diag">
+                Login
+            </div>
+        </div>
+        
+        <div class="bloc login_finaltest hidden">
+            <div class="title_bloc">Login Final Test</div>
+           <div class="info_bloc">
+                User SSO: 
+                <span class="input_zone blue">
+                    <input id="user_sso_input_finaltest" class="inp1" type="text" value="" placeholder="User SSO"/>
+                </span><br>
+                Part Number: 
+                <span class="input_zone blue">
+                    <input id="part_number_input_finaltest" class="inp2" type="text" value="" placeholder="Part number"/>
+                </span><br>
+                Serial Number: 
+                <span class="input_zone blue">
+                    <input id="serial_number_input_finaltest" class="inp3" type="text" value="" placeholder="Serial Number"/>
+                </span><br>
+                Manufacturing Date: 
+                <span class="input_zone blue">
+                    <input id="manufacturing_date_input_finaltest" class="inp3" type="date" value="" />
+                </span><br>
+            </div>
+            <div class="bouton_grey" id="send_info_login_finaltest">
+                Login
+            </div>
+        </div>
+        
+        <div class="bloc information tsui_img hidden">
+            <div class="title_bloc">TSUI Overview</div>
+            <img class="photo_tsui" src="">
+        </div>
+        
+        <div class="bloc information tsui_info hidden">
+            <div class="title_bloc name"></div>
+            <div class="info_bloc">
+                Boot Config: <span class="boot_config blue"></span><br>
+                FPGA Config: <span class="fpga_config blue"></span><br>
+                Software Config: <span class="sw_config blue"></span><br>
+                Unique ID: <span class="unic_config blue"></span><br>
+            </div>
+        </div>
+        
+        <div class="bloc commentary_bloc hidden">
+            <div class="title_bloc">Comment on SN <span class="serial_number"></span></div>
+            <textarea class="input_commentary"></textarea>
+            <div class="update_commentary_bt">Update Comment</div>
+        </div>
+        
+        <div class="information_finaltest hidden">
+            <div class="bouton test_bt_home" data-link="testfwdownloadfinal">
+                Continue
+            </div>
+        </div>
+        <div class="information_diag hidden">
+            <div class="bouton test_bt_home" data-link="testfwdownload">
+                Continue
+            </div>
+        </div>
+        
+        <div class="bloc history_search hidden">
+            <div class="title_bloc">Search history by ..</div>
+            <div class="history_bloc_line">Part Number : <input type='text' class='history_pn_input' value=""></div>
+            <div class="history_bloc_line">Serial Number : <input type='text' class='history_sn_input' value=""></div>
+            <div class="history_bloc_line">User SSO : <input type='text' class='history_sso_input' value=""></div>
+            <div class="history_bloc_line btt"><button class="history_bt_search">Search</button></div>
+        </div>
+        
+        
+    </div>
+    
+    
+</div>

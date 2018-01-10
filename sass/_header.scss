@@ -1,0 +1,60 @@
+#header{
+    .head_container{
+        background:#3b73b9;
+        color:white;
+        text-align:center;
+        height:75px;
+        width:100%;
+        position:relative;
+        top:0;
+        left:0;
+        .head_content{
+            display:inline-block;
+            vertical-align:top;
+            width:1000px;
+            position:relative;
+            .head_title{
+                position: absolute;
+                top: 20px;
+                font-size: 30px;
+            }
+            .head_logo{
+                display:inline-block;
+                vertical-align:top; 
+                cursor: pointer;
+            }
+            .head_userinfo{
+                position: absolute;
+                right: 0;
+                top: 11px;
+                .info{
+                    display: inline-block;
+                    vertical-align: top;
+                    text-align: right;
+                    margin-right: 14px;
+                    padding-top: 6px;
+                    .sso_user{
+                        
+                    }
+                    .role_user{
+                        
+                    }
+                }
+                .logo_user{
+                    display:inline-block;
+                    vertical-align:top;
+                    img{
+                        width:50px;
+                        height:auto;
+                    }
+                }
+            }
+            .exit_bloc{
+                position: absolute;
+                right: 375px;
+                top: 24px;
+                cursor: pointer;
+            }
+        }
+    }
+}

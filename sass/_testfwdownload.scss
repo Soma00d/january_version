@@ -1,0 +1,166 @@
+#content_testfwdownload, #content_testfwdownloadfinal, #content_fctfwdownloadfinal{
+    .get_config{
+        text-align: center;
+        background: #f2f2f2;
+        padding: 10px;
+        width: 250px;
+        border-radius: 5px;
+        border: 2px solid black;
+        display: block;
+        vertical-align: top;
+        height: 128px;
+        margin-left: auto;
+        margin-right: auto;
+        .bt_get_config{
+            margin-bottom: 10px;
+        }
+        .config_info{
+            text-align: left;
+            .text_config{
+                font-weight:bold;
+            }
+        }        
+    }
+    .popup_test_fw_final, .popup_test_fw{
+        background: #f2f2f2;
+        margin-top: 25px;
+        text-align: center;
+        font-size: 25px;
+        padding: 15px;
+        .bt_yes{
+            display:inline-block;
+            vertical-align:top;
+            box-shadow: 3px 3px 3px black;
+            background: #3b73b9;   
+            margin-left: auto;
+            margin-right: auto;
+            width: 100px;
+            height: 37px;
+            text-align: center;
+            color: white;
+            border-radius: 5px;
+            font-size: 22px;
+            padding-top: 6px;
+            margin-top: 21px;
+            cursor: pointer;
+            margin: 15px;
+            &:hover{
+                background:#3895d2;
+                box-shadow: 3px 3px 3px grey;
+            }
+        }
+        .bt_no{
+            display:inline-block;
+            vertical-align:top;
+             box-shadow: 3px 3px 3px black;
+            background: #3b73b9;   
+            margin-left: auto;
+            margin-right: auto;
+            width: 100px;
+            height: 37px;
+            text-align: center;
+            color: white;
+            border-radius: 5px;
+            font-size: 22px;
+            padding-top: 6px;
+            margin-top: 21px;
+            cursor: pointer;
+            margin: 15px;
+            &:hover{
+                background:#3895d2;
+                box-shadow: 3px 3px 3px grey;
+            }
+        }
+    }
+    .bt_continue_diag, .bt_continue_finaltest{
+            display: block;
+            box-shadow: 3px 3px 3px black;
+            background: #3b73b9;
+            margin-left: auto;
+            margin-right: auto;
+            width: 250px;
+            height: 37px;
+            text-align: center;
+            color: white;
+            border-radius: 5px;
+            font-size: 22px;
+            padding-top: 6px;
+            margin-top: 21px;
+            cursor: pointer;
+            &:hover{
+                background:#3895d2;
+                box-shadow: 3px 3px 3px grey;
+            }
+    }
+        .download_tool{
+            text-align: center;
+            background: #f2f2f2;
+            padding: 10px;
+            width: 500px;
+            border-radius: 5px;
+            border: 2px solid black;
+            display: block;
+            vertical-align: top;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        .title_download{
+            font-weight:bold;
+            margin-bottom:10px;
+        }
+        .content_upl{
+            text-align:left;
+            margin-top: -12px;
+            span{
+                color:green;
+                font-weight:bold;
+            }
+        }
+        .start_download{
+            border: 1px solid black;
+            background: #3b73b9;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 8px;
+            width: 122px;
+            box-shadow: 1px 1px 1px black;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .stop_download{
+            border: 1px solid black;
+            background: red;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 8px;
+            width: 122px;
+            box-shadow: 1px 1px 1px black;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .downloading_bar_container{
+            border: 1px solid black;
+            height: 20px;
+            margin-top: 6px;
+            position:relative;
+            .downloading_bar{
+                background: #b9e8ff;
+                width: 0%;
+                height: 20px;
+            }
+            .downloading_bar_content{
+                position:absolute;
+                margin-left:auto;
+                margin-right:auto;
+                left:0;
+                right:0;
+                top:0;
+                text-align: center;
+                font-weight: bold;   
+            }
+        }
+    }
+}

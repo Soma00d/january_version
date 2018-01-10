@@ -1,0 +1,302 @@
+<div class="section_container">
+    <div class="title title_main">Toolbox</div>
+    
+    <div class='container_toolbox_bt'>
+        <button id="dialog-link-diagnostic" class="ui-button ui-corner-all ui-widget selected">
+            <img src='images/diagno.png'><br>
+            Diagnostic
+        </button>
+        <button id="dialog-link-spybox" class="ui-button ui-corner-all ui-widget">
+            <img src='images/binoculars.png'><br>
+            Spy Box
+        </button>    
+        <button id="dialog-link-sender" class="ui-button ui-corner-all ui-widget">
+            <img src='images/send-mail.png'><br>
+            Sender Box
+        </button>        
+        <button id="dialog-link-download" class="ui-button ui-corner-all ui-widget">
+            <img src='images/downloading-action.png'><br>
+            Download FW
+        </button>        
+        <button id="dialog-link-calibration" class="ui-button ui-corner-all ui-widget">
+            <img src='images/settings-gears.png'><br>
+            Calibration
+        </button>
+    </div>
+    
+    <div class="diag_inge panels">
+        <div class="legend_inge">            
+            <div class="content_question">
+                <b>Node ID</b> : <span class="actual_node_id"></span><br>
+                <b>O</b> : On/off led signal<br>
+                <b>D</b> : Dim/off led signal<br>
+                <b>F</b> : Flash/off led signal
+            </div>
+        </div>
+        <div class="button_show">
+            <div class="zone zone_0">
+                <div class="name_container">LEFT AREA</div>
+            </div>
+            <div class="zone zone_1">
+                <div class="name_container">BOTTOM AREA</div>
+            </div>
+            <div class="zone zone_2">
+                <div class="name_container">RIGHT AREA</div>
+            </div>
+            <div class="get_config get_conf_inge">
+                <button class="bt_get_config">Get configuration</button>
+                <div class="config_info">
+                    <span class="text_config">Boot Release : </span><span class="boot_config"></span><br>
+                    <span class="text_config">App. Software: </span><span class="sw_config"></span><br>
+                    <span class="text_config">FPGA Release : </span><span class="fpga_config"></span><br>
+                    <span class="text_config">Unique ID : </span><span class="unic_config"></span>
+                </div>
+            </div>
+            <div class="show_joystick">
+                JOYSTICKS
+            </div>
+            <div class="show_led">
+                FUNCTIONS
+            </div>
+            <div class="tsui_restart_bt">
+                TSUI RESTART
+            </div>
+        </div>    
+        
+        <div class="joystick_show">
+            <div class="buttons_diag_joystick">
+                <div class="show_button">
+                    BUTTONS
+                </div>
+                <div class="show_led">
+                    FUNCTIONS
+                </div>
+            </div>
+            
+            <div class="zone zone_3">
+                <div class="name_container">SATELLITES & ENABLE</div>
+                <div class="content"></div>
+            </div>
+             <div class="joystick_container_new">
+       
+            </div>
+                        
+           
+           
+        </div>
+        
+        <div class="led_show">
+            <div class="show_button">
+                BUTTONS
+            </div>
+            <div class="show_joystick" style="top:41px">
+                JOYSTICKS
+            </div>  
+            <div class="supply_container zone">
+                <div class="name_container">TSUI SUPPLY</div>
+                <div class="content"></div>
+            </div>
+            <div class="start_node_bt">START NODE</div>
+            <div class="stop_node_bt">STOP NODE</div>
+            <div class="display_all_bt">DISPLAY ALL LEDS</div>
+            <div class="stop_all_bt">STOP ALL LEDS</div>
+            <div class="start_agila_bt">START AGILA CONF</div>
+            <div class="start_elegance_bt">START ELEGANCE CONF</div>
+            
+            <div class="buzzer_container zone">
+                <div class="name_container">BUZZER</div>
+                <div class="content"></div>
+            </div>
+            <div class="srtl_container zone">
+                <div class="name_container">SRTL</div>
+                <div class="content"></div>
+                SRTL : <span class="srtl"><img src="images/switch_off.png"></span>
+                <div class="state">Bits State</div>
+                <b>Safety Loop:</b> <span class="safety_srtl"></span><br>
+                <b>Enable:</b> <span class="enable_srtl"></span>
+            </div>
+            <div class="display_container zone">
+                <div class="name_container">DISPLAY</div>
+                <div class="content"></div>
+            </div>
+            <div class="safety_container zone">
+                <div class="name_container">SAFETY LOOP</div>
+                <div class="content"></div>
+                <div class="state">Signal Characteristics</div>
+                <div class="values_freq_volt">
+                    <div class="frequency">Frequency (Hz): <span class="safety_freq_val"></span></div>
+                    <div class="voltage">Amplitude (V): <span class="safety_volt_val"></span></div>
+                </div>
+            </div>
+            <div class="emergency_container zone">
+                <div class="name_container">EMERGENCY STOP</div>
+                <div class="switch_emergency">EMCIO HeartBit : <span class="emergency"><img src="images/switch_off.png"></span></div>
+                <div class="emergency_bt_clr">CLR</div>
+                <div class="emergency_bt_set">SET</div>
+                <div class="emergency_bt_down">DWN</div>
+            </div>
+            <div class="nodeid_container zone">
+                <div class="name_container">NODE ID</div>
+                <select id="select_nodeid">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                </select>
+                <div id="value_nodeid" class="hidden">0</div>
+                <button class="change_nodeid">Change Node ID</button>
+            </div>
+            <div class="enable_container zone">
+                <div class="name_container">TSUI ENABLE</div>
+                <div class="content"></div>
+                <div class="state">Signal Characteristics</div>
+                <div class="values_freq_volt">
+                    <div class="frequency">Frequency (Hz): <span class="enable_freq_val"></span></div>
+                    <div class="voltage">Amplitude (V): <span class="enable_volt_val"></span></div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="download_inge panels">
+        
+        <div class="download_tool">
+            <div class="title_download">Download FW Toolbox</div>
+            <div class="testing_upl">
+                <input type="file" id="fileinput2" /><br><br>
+                <div class="content_upl"></div>
+                <div class="downloading_bar_container hidden">
+                    <div class="downloading_bar"></div>
+                    <div class="downloading_bar_content">0 %</div>
+                </div>
+                <div class="start_download hidden">Start Download</div>
+                <div class="stop_download hidden">Stop Download</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="calibration_inge panels">
+        <div class="warning_firmware"><img src="images/warning.png"> TSUI with Calibration firmware is necessary to operate this module.</div>
+        <div class="toolbox_calibration">       
+            <div class="eprom_protect protected">
+                <img class="img_eprom" src="images/protected.png"/>
+                <div class="txt_eprom">EEPROM is protected</div>        
+                <div class="bt_eprom">UNLOCK EPROM</div>
+            </div>
+        </div>
+        
+        <div class="calibration_zone_container">
+            
+        </div>
+        
+        <div class="calibration_test_container">
+            
+        </div>
+        
+    </div>
+
+    <!-- ui-dialog spybox -->
+    <div id="dialog-spybox" title="Spy Box"> 
+        <div class="option_line">
+            <button class="spy_stop">Pause</button>
+            <button class="spy_play">Play</button>
+            <button class="spy_clear">Clear</button>
+            <button class="add_zero_spy">Add Zero</button>
+        </div>
+        <div class="filter_panel">
+            <span class="text">Filter by CAN ID: </span><input class="filter_canid" type="text" value="" placeholder="000001ad" /><br><br>
+            <span class="text">Filter by CAN DATA: </span><input class="filter_candata" type="text" value="" placeholder="000000000000" /><br>
+            <div class="bt_filter filters_id">
+                <button class="exclude_filter_id"><img src="images/warning-sign.png"></button>
+                <button class="filter_id"><img src="images/check_green.png"></button>                
+            </div>
+            <div class="bt_filter filters_data">
+                <button class="exclude_filter_data"><img src="images/warning-sign.png"></button>
+                <button class="filter_data"><img src="images/check_green.png"></button>        
+            </div>            
+        </div>
+        <div class="filters_listing">
+            <div class="title_filters">Active Filters <span class="italic">Click on to remove</span></div>
+            <div class="content_filters">
+             
+            </div>
+        </div>
+        <div class="head_line">
+            <span class="canid_head">CAN ID</span>
+            <span class="candata_head">CAN DATA</span>
+            <span class="number_head">COUNT</span>
+            <span class="ts_head">TIMESTAMP</span>
+        </div>
+        <div class="content_line"></div>
+    </div>
+    
+     <!-- ui-dialog sender -->
+     <div id="dialog-sender" title="Sender Box"><br>
+        <button class="add_zero">Add zeros</button>
+        <div class="presentation_sender">Type message to send:</div>
+        <div class="input_bloc_sender">
+            <div><span class="text_sender red">DLC: </span><input type="text" class="candlc_sender" value="" placeholder="08" /></div>
+            <div><span class="text_sender green">CAN ID: </span><input type="text" class="canid_sender" value="" placeholder="000001ad" /></div>
+            <div><span class="text_sender blue">CAN DATA: </span><input type="text" class="candata_sender" value="" placeholder="000000000000" /></div>
+        </div>
+        <div><button class="sender_test">Preview</button></div>
+        <div class="error_sender hidden"></div>
+        <div class="result_sender hidden">
+            <div class="reference_sender">
+                <span class="text_ref">Reference : </span><span class='red'>08</span> <span class='green'>00000228</span> <span class='blue'>01900d2500000000</span>
+            </div>
+            <div class="sender_msg"></div>
+            <div class="length_msg"></div>
+            <div><button class="sender_final">Send !</button></div>
+        </div>
+    </div>
+
+</div>
+
+
+<script>
+$( "#select_nodeid" )
+  .change(function() {
+    var str = "";
+    $( "#select_nodeid option:selected" ).each(function() {
+      str += $( this ).text() + " ";
+    });
+    $( "#value_nodeid" ).text( str );
+  })
+  .trigger( "change" );
+$( "#dialog-spybox" ).dialog({
+    autoOpen: false,
+    width: 500,
+    resizable:true,
+    dialogClass: 'success-dialog'
+    
+});
+$( "#dialog-sender" ).dialog({
+    autoOpen: false,
+    width: 400,
+    resizable:true,
+    dialogClass: 'success-dialog'
+});
+
+// Link to open the dialog
+$( "#dialog-link-spybox" ).click(function( event ) {
+	$( "#dialog-spybox" ).dialog( "open" );
+	$( "#dialog-spybox" ).addClass( "open" );
+	event.preventDefault();
+});
+$(".success-dialog .ui-dialog-titlebar-close").click(function() {
+    $( "#dialog-spybox" ).removeClass( "open" );
+    $( "#dialog-spybox .content_line" ).empty();
+});
+
+$( "#dialog-link-sender" ).click(function( event ) {
+	$( "#dialog-sender" ).dialog( "open" );
+	event.preventDefault();
+});
+
+</script>

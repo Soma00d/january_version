@@ -1,0 +1,1437 @@
+.ui-dialog-titlebar-close{
+    position: absolute;
+    right: -25px;
+    top: -10px;
+    border: 2px solid red;
+    background: red;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.ui-dialog.success-dialog {
+    border: 2px solid #3b73b9;
+    border-radius: 5px;
+    padding: 15px;
+    background: #f5f5f5;
+}
+
+.ui-dialog-titlebar{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background: #3b73b9;
+    cursor: pointer;
+    border-radius: 5px;
+    padding-top: 3px;
+    padding-bottom: 6px;
+    color:white;
+}
+
+#dialog-spybox{
+    
+}
+#dialog-link-spybox{
+    background: none;
+    border: 3px solid #3b73b9;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+#dialog-link-spybox, #dialog-link-sender, #dialog-link-calibration, #dialog-link-download, #dialog-link-diagnostic{
+    display: inline-block;
+    vertical-align: top;
+    width: 123px;
+    background: none;
+    border: 3px solid #3b73b9;
+    border-radius: 5px;
+    font-size: 17px;
+    text-align: center;
+    color: #3b73b9;
+    background: #f2f2f2;
+    cursor: pointer;
+    margin: 10px;
+    padding: 5px;
+    box-shadow: 2px 2px 1px grey;
+    outline: none;
+    img{
+        width: 25px;
+    }
+    &.selected{
+        box-shadow: none;
+        background:white;
+    }
+}
+.container_toolbox_bt{
+    text-align:center;
+}
+    
+    
+#dialog-spybox{
+    
+    .option_line{        
+        margin-top: 5px;
+        padding: 2px;
+        text-align: center;
+        button{
+            width: 70px;
+            border-radius: 5px;
+            margin: 3px;
+            cursor: pointer;
+        }
+    }
+    .filter_panel{
+        background: #d2d2e2;
+        padding: 8px;
+        margin-top: 5px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        position:relative;
+        .recap_filter{
+            font-weight: bold;
+            margin-top: 6px;
+            text-align: center;
+        }
+        .is_different_canid{
+            display: inline-block;
+            vertical-align: middle;
+            width: 22px;
+            padding: 1px;
+            cursor: pointer;
+            margin-left: 8px;
+            img{
+                width:100%;
+                height:auto;
+            }
+            &.activated{
+                border:2px solid red;
+                border-radius:5px;
+            }
+        }
+        .is_different_candata{
+            display: inline-block;
+            vertical-align: middle;
+            width: 22px;
+            padding: 1px;
+            cursor: pointer;
+            margin-left: 8px;
+            img{
+                width:100%;
+                height:auto;
+            }
+            &.activated{
+                border:2px solid red;
+                border-radius:5px;
+            }
+        }
+        .bt_filter{
+            position: absolute;
+            top: 7px;
+            right: 51px;
+            &.filters_data{
+                top:46px;
+            }
+        }
+        button{
+            width: 32px;
+            border-radius: 5px;
+            margin: 0px;
+            cursor: pointer;
+            img{
+                width:100%;
+                height:auto;
+            }
+        }
+        .text{
+            width: 150px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        
+    }
+    .head_line{
+        border-bottom: 1px solid black;
+        margin-top: 8px;
+        height: 25px;
+        font-weight: bold;
+        span{
+            display:inline-block;
+            vertical-align:top;
+            margin: 2px;
+        }
+        .canid_head{
+            width:100px;
+            color:orangered;
+        }
+        .candata_head{
+            width:150px;
+            color:green;
+        }
+        .number_head{
+            width:80px;
+        }
+    }
+    .content_line{
+        margin-top:10px;
+        height: 200px;
+        overflow-y: scroll;
+        span{
+            display: inline-block;
+            vertical-align: top;
+            margin:2px;
+        }
+        .can_id_spy{
+            width: 100px;
+        }
+        .can_data_spy{
+            width: 150px;
+        }
+        .nb{
+            width:80px;
+        }
+    }
+    .filters_listing{
+        margin-bottom: 15px;
+        .title_filters{
+            font-weight: bold;
+            margin-bottom: 5px;
+            .italic{
+                font-weight: normal;
+                font-style: italic;
+                color: grey;
+                display: inline-block;
+                margin-left: 10px;
+            }
+        }
+    }
+    .content_filters{
+            .filter_box{
+                width: 155px;
+                background: #dbffdc;
+                text-align: center;
+                border: 2px solid #21c326;
+                border-radius: 5px;
+                box-shadow: 1px 1px 1px grey;
+                display: inline-block;
+                margin: 2px;
+                vertical-align: top;
+                cursor: pointer;
+                &.exclude{
+                    background: #ffc1c1;
+                    border: 2px solid #ec5555;
+                }
+            }
+        }
+}
+
+#dialog-sender{
+    .red{
+            color:red;
+        }
+        .green{
+            color:green;
+        }
+        .blue{
+            color:blue;
+        }
+    .presentation_sender{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .text_sender{
+        width: 82px;
+        display: inline-block;
+        vertical-align:middle;
+    }
+    .input_bloc_sender{
+        margin-bottom: 15px;        
+    }
+    .error_sender{
+        margin-top: 15px;
+        font-weight: bold;
+        color: red;
+    }
+    .result_sender{
+        margin-top:15px;
+        
+    }
+    .length_msg{
+        margin-bottom: 15px;
+    }
+    .text_ref{
+        display: inline-block;
+        vertical-align: middle;
+        width: 82px;
+    }
+    
+}
+
+.diag_inge{
+    position:relative;
+    margin-top:40px;
+    .legend_inge{
+        position: absolute;
+        top: -122px;
+        margin: auto;
+        left: -77px;
+        width: 181px;
+        z-index: 0;
+        background: white;
+        border-radius: 5px;
+        font-size: 14px;
+        background: #f2f2f2;
+        padding: 8px;
+        padding-left: 17px;
+    }
+    .buttons_diag_joystick{
+            display: block;
+            position: relative;
+            height: 100px
+        }
+    .zone{
+        border: 3px solid #3b73b9;
+        border-radius: 5px;
+        padding: 5px;
+        position: absolute;
+        
+        .diag_component{ 
+            &.is_pressed{
+                background: #59ee3a;
+            }
+            width: 365px;
+            .info_component{
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 8px;
+                .switch{
+                    img{
+                        width: 32px;
+                        height: auto;
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                    display: inline-block;
+                    vertical-align: middle;
+                    cursor:pointer;
+                    margin:2px;
+                    font-weight:bold;
+                    
+                }
+                .symbol{
+                    display: inline-block;
+                    vertical-align: middle;
+                    font-weight: bold;
+                    width: 40px
+                }
+                .type{
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 55px;
+                    font-style: italic;
+                }
+                .descri{
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 95px;
+                }
+                .press{
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 30px;
+                }
+                .rel{
+                    display: inline-block;
+                    vertical-align: middle
+                }
+            }
+            .photo_piece{
+                display: inline-block;
+                vertical-align: middle;
+            }
+            img{
+                border-radius: 70px;
+                width: 70px;
+                height: 40px;
+            }
+        }
+        &.zone_0{
+            top:0;
+            left:0;
+            min-height: 264px;
+        }
+        &.zone_1{
+            top: 308px;
+            left: 0;
+            width: 986px;
+            text-align:center;
+            width: 750px;
+            margin: auto;
+            right: 0;
+            .diag_component{
+                display: inline-block;
+                vertical-align: top;
+                text-align:left;
+            }
+        }
+        &.zone_2{
+            top: 0;
+            right: 0;
+            min-height: 265px;
+            min-width: 362px;
+        }
+        &.zone_3{           
+            width: 750px;
+            margin: auto;
+            position:relative;
+            .diag_component{
+                display: inline-block;
+                vertical-align: top;
+                text-align:left;
+            }
+        }
+        &.zone_4{
+            top: 370px;
+            left: 0;
+           width: 750px;
+            text-align: center;
+            margin: auto;
+            right: -320px;
+            .diag_component{
+                display: inline-block;
+                vertical-align: top;
+                text-align:left;
+            }
+        }
+        &.zone_5{
+            top: 657px;
+            left: 0;
+            width: 750px;
+            text-align: center;
+            margin: auto;
+            right: -320px;
+            .diag_component{
+                display: inline-block;
+                vertical-align: top;
+                text-align:left;
+            }
+        }
+        
+        .name_container{
+            position: absolute;
+            top: -20px;
+            font-weight: bold;
+            font-style: italic;
+            color:#3b73b9;
+        }
+    }
+    .display_container{
+        right: 0;
+        width: 365px;
+        min-height: 191px;
+        
+        .diag_component{
+            margin-bottom: 10px;
+            margin-top: 7px;    
+        }
+    }
+    .srtl_container{
+        top: 86px;
+        width: 355px;
+        padding-left: 15px;
+        .srtl{
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 15px;
+            cursor:pointer;
+            img{
+                width:32px;
+            }
+        }
+        .state{
+             text-align: center;
+            font-weight: bold;
+            width: 207px;
+            border-bottom: 1px solid #bcbcbc;
+            margin-left: auto;
+            margin-right: auto;
+            /* margin-top: 5px; */
+            margin-bottom: 10px;
+            color: #3e3e3e;
+        }
+    }
+    .tsui_restart_bt{
+        text-align: center;
+        background: #c84848;
+        padding: 5px;
+        color: white;
+        width: 183px;
+        border-radius: 5px;
+        display: inline-block;
+        vertical-align: top;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        cursor: pointer;
+        box-shadow: 2px 2px 2px black;
+        top:248px;
+    }
+    .start_node_bt{
+        text-align: center;
+        background: #7aa2c8;
+        font-style:italic;
+        padding: 5px;
+        color: white;
+        width: 183px;
+        border-radius: 5px;
+        display: inline-block;
+        vertical-align: top;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        cursor: pointer;
+        box-shadow: 2px 2px 2px black;
+        top:150px;
+    }
+    .stop_node_bt{
+        text-align: center;
+        background: #7aa2c8;
+        font-style:italic;
+        padding: 5px;
+        color: white;
+        width: 183px;
+        border-radius: 5px;
+        display: inline-block;
+        vertical-align: top;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        cursor: pointer;
+        box-shadow: 2px 2px 2px black;
+        top:190px;
+    }
+    .display_all_bt{
+        text-align: center;
+        background: #7aa2c8;
+        font-style:italic;
+        padding: 5px;
+        color: white;
+        width: 183px;
+        border-radius: 5px;
+        display: inline-block;
+        vertical-align: top;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        cursor: pointer;
+        box-shadow: 2px 2px 2px black;
+        top:250px;
+    }
+    .stop_all_bt{
+        text-align: center;
+        background: #7aa2c8;
+        font-style:italic;
+        padding: 5px;
+        color: white;
+        width: 183px;
+        border-radius: 5px;
+        display: inline-block;
+        vertical-align: top;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        cursor: pointer;
+        box-shadow: 2px 2px 2px black;
+        top:290px;
+    }
+    .start_agila_bt{
+        text-align: center;
+        background: #7aa2c8;
+        font-style:italic;
+        padding: 5px;
+        color: white;
+        width: 183px;
+        border-radius: 5px;
+        display: inline-block;
+        vertical-align: top;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        cursor: pointer;
+        box-shadow: 2px 2px 2px black;
+        top:350px;
+    }
+    .start_elegance_bt{
+        text-align: center;
+        background: #7aa2c8;
+        font-style:italic;
+        padding: 5px;
+        color: white;
+        width: 183px;
+        border-radius: 5px;
+        display: inline-block;
+        vertical-align: top;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        cursor: pointer;
+        box-shadow: 2px 2px 2px black;
+        top:390px;
+    }
+    .emergency_stop_bt{
+        text-align: center;
+        background: #7aa2c8;
+        font-style:italic;
+        padding: 5px;
+        color: white;
+        width: 183px;
+        border-radius: 5px;
+        display: inline-block;
+        vertical-align: top;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        cursor: pointer;
+        box-shadow: 2px 2px 2px black;
+        top:450px;
+    }
+    .supply_container{  
+        top: 110px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        color: #3b73b9;
+        width: 177px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .safety_container{
+        top: 237px;
+        .descri{
+            width:160px !important;
+        }
+        .values_freq_volt{
+            .frequency, .voltage{
+                font-weight: bold;
+            }
+        }
+        .state{
+            text-align: center;
+            font-weight: bold;
+            width: 207px;
+            border-bottom: 1px solid #bcbcbc;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: #3e3e3e;
+        }
+    }
+    .buzzer_container{
+        width: 365px;
+        min-height: 43px;
+    }
+    .nodeid_container{
+        width: 365px;
+        min-height: 43px;
+        top: 567px;
+    }
+    .emergency_container{
+        top: 450px;
+        width: 355px;
+        padding-left: 15px;
+        .emergency{
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 15px;
+            cursor: pointer;
+            img{
+                width: 32px;
+            }
+        }
+        .emergency_bt_clr{
+            display: inline-block;
+            vertical-align: top;
+            margin: 5px;
+            background: #7aa2c8;
+            color: white;
+            cursor: pointer;
+            padding: 3px;
+            width: 50px;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 1px 1px 1px black;
+        }
+        .emergency_bt_set{
+             display: inline-block;
+            vertical-align: top;
+            margin: 5px;
+            background: #7aa2c8;
+            color: white;
+            cursor: pointer;
+            padding: 3px;
+            width: 50px;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 1px 1px 1px black;
+        }
+        .emergency_bt_down{
+             display: inline-block;
+            vertical-align: top;
+            margin: 5px;
+            background: #7aa2c8;
+            color: white;
+            cursor: pointer;
+            padding: 3px;
+            width: 50px;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 1px 1px 1px black;
+        }
+    }
+    .enable_container{
+        top: 291px;
+        right:0;
+        .descri{
+            width:160px !important;
+        }
+        .values_freq_volt{
+            .frequency, .voltage{
+                font-weight: bold;
+            }
+        }
+        .state{
+            text-align: center;
+            font-weight: bold;
+            width: 207px;
+            border-bottom: 1px solid #bcbcbc;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: #3e3e3e;
+        }
+    }
+    .get_config{
+        text-align: center;
+        background: #f2f2f2;
+        padding: 10px;
+        width: 183px;
+        border-radius: 5px;
+        border: 2px solid black;
+        display: inline-block;
+        vertical-align: top;
+        height: 128px;
+        position: absolute;
+        left: 398px;
+        top: 83px;
+        .bt_get_config{
+            margin-bottom: 10px;
+        }
+        .config_info{
+            text-align: left;
+            .text_config{
+                font-weight:bold;
+            }
+        }        
+    }
+    .show_joystick{
+        text-align: center;
+        background: #3b73b9;
+        padding: 5px;
+        color: white;
+        width: 183px;
+        border-radius: 5px;
+        display: inline-block;
+        vertical-align: top;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        cursor: pointer;
+        box-shadow: 2px 2px 2px black;        
+    }
+    .show_button{
+        text-align: center;
+        background: #3b73b9;
+        padding: 5px;
+        color: white;
+        width: 183px;
+        border-radius: 5px;
+        display: inline-block;
+        vertical-align: top;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        cursor: pointer;
+        box-shadow: 2px 2px 2px black;
+    }
+    .show_led{
+        text-align: center;
+        background: #3b73b9;
+        padding: 5px;
+        color: white;
+        width: 183px;
+        border-radius: 5px;
+        display: inline-block;
+        vertical-align: top;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 41px;
+        margin: auto;
+        cursor: pointer;
+        box-shadow: 2px 2px 2px black;
+    }
+    
+    .joystick_show{
+        display:none;
+        min-height:930px;
+        .informations{
+            width: 100px;
+            margin-bottom: 10px;
+            height: 15px;
+            margin-top: 15px;
+            .zero{
+                float:left;
+
+            }
+            .cent{
+                float:right;
+            }
+        }
+        .jauge_container_global{
+            text-align:center;
+            top: 50px;
+            position: absolute;
+        }
+        .canvas_jauge{
+            position: relative;
+            width: 177px;
+            height: 278px;
+            .title_jauge{
+                font-weight: bold;
+                font-size: 13px;
+            }
+
+            #jauge_joystick_horizontal_left{
+                position: absolute;
+                left: 0px;
+                top: 90px;
+                .jauge_container{
+                    width: 100*0.75px;
+                    height: 30*0.75px;
+                    border: 1px solid black;
+                    background:yellowgreen;
+                    box-shadow: -2px 0px 5px 0px grey;
+                }
+                .jauge_remplissage{
+                    width:100%;
+                    height: 30*0.75px;
+                    background:white;
+                }
+            }
+            #jauge_joystick_horizontal_right{
+                position: absolute;
+                left: 132*0.75px;
+                top: 90px;
+                .jauge_container{
+                    width: 100*0.75px;
+                    height: 30*0.75px;
+                    border: 1px solid black;
+                    background:white;
+                    box-shadow: 2px 0px 5px 0px grey;
+                }
+                .jauge_remplissage{
+                    width:0%;
+                    height: 30*0.75px;
+                    background:yellowgreen;
+                }
+            }
+            #jauge_joystick_vertical_top{
+                position: absolute;
+                left: 101*0.75px;
+                .jauge_container{
+                    height: 100*0.75px;
+                    width: 30*0.75px;
+                    border: 1px solid black;
+                    background:yellowgreen;
+                    box-shadow: 0px -2px 5px 0px grey;
+                }
+                .jauge_remplissage{
+                    height:100%;
+                    width: 30*0.75px;
+                    background:white;
+                }
+            }
+            #jauge_joystick_vertical_bot{
+                position: absolute;
+                left: 101*0.75px;
+                top:203*0.75px;
+                .jauge_container{
+                    height: 100*0.75px;
+                    width: 30*0.75px;
+                    border: 1px solid black;
+                    background:white;
+                    box-shadow: 0px 2px 5px 0px grey;
+                }
+                .jauge_remplissage{
+                    height:0%;
+                    width: 30*0.75px;
+                    background:yellowgreen;
+                }
+                .informations{
+                    margin-top:6px;
+                }
+            }
+
+
+            #jauge_joystick_horizontal_left_2{
+                position: absolute;
+                left: 0px;
+                top: 90px;
+                .jauge_container{
+                    width: 100*0.75px;
+                    height: 30*0.75px;
+                    border: 1px solid black;
+                    background:yellowgreen;
+                    box-shadow: -2px 0px 5px 0px grey;
+                }
+                .jauge_remplissage{
+                    width:100%;
+                    height: 30*0.75px;
+                    background:white;
+                }
+            }
+            #jauge_joystick_horizontal_right_2{
+                position: absolute;
+                    left: 132*0.75px;
+                    top: 90px;
+                    .jauge_container{
+                        width: 100*0.75px;
+                        height: 30*0.75px;
+                        border: 1px solid black;
+                        background:white;
+                        box-shadow: 2px 0px 5px 0px grey;
+                    }
+                    .jauge_remplissage{
+                        width:0%;
+                        height: 30*0.75px;
+                        background:yellowgreen;
+                    }
+                }
+                #jauge_joystick_vertical_top_2{
+                    position: absolute;
+                    left: 101*0.75px;
+                    .jauge_container{
+                        height: 100*0.75px;
+                        width: 30*0.75px;
+                        border: 1px solid black;
+                        background:yellowgreen;
+                        box-shadow: 0px -2px 5px 0px grey;
+                    }
+                    .jauge_remplissage{
+                        height:100%;
+                        width: 30*0.75px;
+                        background:white;
+                    }
+                }
+                #jauge_joystick_vertical_bot_2{
+                    position: absolute;
+                    left: 101*0.75px;
+                    top:203*0.75px;
+                    .jauge_container{
+                        height: 100*0.75px;
+                        width: 30*0.75px;
+                        border: 1px solid black;
+                        background:white;
+                        box-shadow: 0px 2px 5px 0px grey;
+                    }
+                    .jauge_remplissage{
+                        height:0%;
+                        width: 30*0.75px;
+                        background:yellowgreen;
+                    }
+                    .informations{
+                        margin-top:6px;
+                    }
+                }
+
+                #jauge_joystick_horizontal_left_3{
+                    position: absolute;
+                    left: 0px;
+                    top: 90px;
+                    .jauge_container{
+                        width: 100*0.75px;
+                        height: 30*0.75px;
+                        border: 1px solid black;
+                        background:yellowgreen;
+                        box-shadow: -2px 0px 5px 0px grey;
+                    }
+                    .jauge_remplissage{
+                        width:100%;
+                        height: 30*0.75px;
+                        background:white;
+                    }
+                }
+                #jauge_joystick_horizontal_right_3{
+                    position: absolute;
+                    left: 132*0.75px;
+                    top: 90px;
+                    .jauge_container{
+                        width: 100*0.75px;
+                        height: 30*0.75px;
+                        border: 1px solid black;
+                        background:white;
+                        box-shadow: 2px 0px 5px 0px grey;
+                    }
+                    .jauge_remplissage{
+                        width:0%;
+                        height: 30*0.75px;
+                        background:yellowgreen;
+                    }
+                }
+                #jauge_joystick_vertical_top_3{
+                    position: absolute;
+                    left: 101*0.75px;
+                    .jauge_container{
+                        height: 100*0.75px;
+                        width: 30*0.75px;
+                        border: 1px solid black;
+                        background:yellowgreen;
+                        box-shadow: 0px -2px 5px 0px grey;
+                    }
+                    .jauge_remplissage{
+                        height:100%;
+                        width: 30*0.75px;
+                        background:white;
+                    }
+                }
+                #jauge_joystick_vertical_bot_3{
+                    position: absolute;
+                    left: 101*0.75px;
+                    top:203*0.75px;
+                    .jauge_container{
+                        height: 100*0.75px;
+                        width: 30*0.75px;
+                        border: 1px solid black;
+                        background:white;
+                        box-shadow: 0px 2px 5px 0px grey;
+                    }
+                    .jauge_remplissage{
+                        height:0%;
+                        width: 30*0.75px;
+                        background:yellowgreen;
+                    }
+                    .informations{
+                        margin-top:6px;
+                    }
+                }
+
+
+            }
+    }
+    
+    .led_show{
+        display:none;
+    }
+    
+    
+    
+}
+
+.download_inge{
+    display:none;
+    margin-top: 40px;
+    .download_tool{
+        text-align: center;
+        background: #f2f2f2;
+        padding: 10px;
+        width: 500px;
+        border-radius: 5px;
+        border: 2px solid black;
+        vertical-align: top;
+        margin-left: auto;
+        margin-right: auto;
+        .title_download{
+            font-weight:bold;
+            margin-bottom:10px;
+        }
+        .content_upl{
+            text-align:left;
+            margin-top: -12px;
+            span{
+                color:green;
+                font-weight:bold;
+            }
+        }
+        .start_download{
+            border: 1px solid black;
+            background: #3b73b9;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 8px;
+            width: 122px;
+            box-shadow: 1px 1px 1px black;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .stop_download{
+            border: 1px solid black;
+            background: red;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 8px;
+            width: 122px;
+            box-shadow: 1px 1px 1px black;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .downloading_bar_container{
+            border: 1px solid black;
+            height: 20px;
+            margin-top: 6px;
+            position:relative;
+            .downloading_bar{
+                background: #b9e8ff;
+                width: 0%;
+                height: 20px;
+            }
+            .downloading_bar_content{
+                position:absolute;
+                margin-left:auto;
+                margin-right:auto;
+                left:0;
+                right:0;
+                top:0;
+                text-align: center;
+                font-weight: bold;   
+            }
+        }
+    }    
+}
+
+.calibration_inge{
+    display:none;
+    margin-top: 40px;
+    .warning_firmware{
+        padding: 5px;
+        border: 2px solid orange;
+        border-radius: 5px;
+        width: 460px;
+        font-weight: bold;
+        margin-bottom: 24px;
+        margin-left: auto;
+        margin-right: auto;
+        img{
+            width: 32px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 15px;
+        }
+    }
+    .calibration_zone_container{
+        text-align:center;
+        margin-top: 30px;
+    }
+    .bloc_calibrate{
+        display: inline-block;
+        border: 1px solid black;
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+        width: 280px;
+        vertical-align: top;
+    }
+    .validate_calib{
+        cursor: pointer;
+        background: #3b73b9;
+        width: 80px;
+        display: inline-block;
+        padding: 3px;
+        color: white;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+    .title_jauge{
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: #3b73b9;
+    }
+    .status_calib{
+        margin-bottom: 10px;
+    }
+    .calibration_test_container{
+        text-align:center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .bt_moins{
+        border: 1px solid black;
+        cursor: pointer;
+        width: 28px;
+        height: 25px;
+        text-align: center;
+        border-radius: 5px;
+        display: inline-block;
+        vertical-align: top;
+        margin: 5px;
+        padding-top: 3px;
+    }
+    .bt_plus{
+        border: 1px solid black;
+        cursor: pointer;
+        width: 28px;
+        height: 25px;
+        text-align: center;
+        border-radius: 5px;
+        display: inline-block;
+        vertical-align: top;
+        margin: 5px;
+        padding-top: 3px;
+    }
+    .intitule{
+        font-weight: bold;
+        font-size: 30px;
+        text-align: center;
+    }
+    .toolbox_calibration{
+        text-align:center;
+    }
+    .get_config{
+        text-align: center;
+        background: #f2f2f2;
+        padding: 10px;
+        width: 250px;
+        border-radius: 5px;
+        border: 2px solid black;
+        display: inline-block;
+        vertical-align: top;
+        height: 128px;
+        .bt_get_config{
+            margin-bottom: 10px;
+        }
+        .config_info{
+            text-align: left;
+            .text_config{
+                font-weight:bold;
+            }
+        }        
+    }
+    .eprom_protect{
+        width: 199px;
+        border: 2px solid #3b73b9;
+        border-radius: 5px;
+        padding: 5px;
+        display:inline-block;
+        vertical-align:top;
+        .img_eprom{
+            width: 35px;
+            height: auto;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        .txt_eprom{            
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .bt_eprom{            
+            border-radius: 5px;
+            background: #c4c4c4;
+            font-weight: bold;
+            text-align: center;
+            height: 21px;
+            padding-top: 3px;
+            box-shadow: 1px 1px 1px black;
+            width: 140px;
+            cursor: pointer;
+            margin-top: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10px;
+        }
+    }
+    .realtime_joysticks_val{
+            text-align: center;
+            background: #f2f2f2;
+            padding: 10px;
+            width: 280px;
+            border-radius: 5px;
+            border: 2px solid black;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: -19px;
+            height: 128px;
+            margin: 10px;
+        .current_joystick{
+            font-weight:bold;
+        }
+        .bloc_left_joy{
+            text-align: left;
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 10px;
+            border-right: 1px solid black;
+            width:100px;
+        }
+        .bloc_right_joy{
+            text-align: left;
+            display: inline-block;
+            vertical-align: top;
+            width:100px;
+        }
+    }
+    .download_tool{
+        text-align: center;
+        background: #f2f2f2;
+        padding: 10px;
+        width: 500px;
+        border-radius: 5px;
+        border: 2px solid black;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 50px;
+        .title_download{
+            font-weight:bold;
+            margin-bottom:10px;
+        }
+        .content_upl{
+            text-align:left;
+            margin-top: -12px;
+            span{
+                color:green;
+                font-weight:bold;
+            }
+        }
+        .start_download{
+            border: 1px solid black;
+            background: #3b73b9;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 8px;
+            width: 122px;
+            box-shadow: 1px 1px 1px black;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .stop_download{
+            border: 1px solid black;
+            background: red;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 8px;
+            width: 122px;
+            box-shadow: 1px 1px 1px black;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .downloading_bar_container{
+            border: 1px solid black;
+            height: 20px;
+            margin-top: 6px;
+            position:relative;
+            .downloading_bar{
+                background: #b9e8ff;
+                width: 0%;
+                height: 20px;
+            }
+            .downloading_bar_content{
+                position:absolute;
+                margin-left:auto;
+                margin-right:auto;
+                left:0;
+                right:0;
+                top:0;
+                text-align: center;
+                font-weight: bold;   
+            }
+        }
+    }
+    .jauge_container_global{
+        text-align:center;
+    }
+    .canvas_jauge{
+        position: relative;
+        width: 235px;
+        height: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        display: inline-block;
+        vertical-align: top;
+        margin:30px;
+        .title_jauge{
+            font-weight: bold;
+            font-size: 26px;
+        }
+        
+        
+        
+        .calibrate_bt_1, .calibrate_bt_2, .calibrate_bt_3{
+            position:absolute;
+            margin:auto;
+            left:0;
+            right:0;
+            top:60px;
+            .calibrate_tool{
+                border: 3px solid #3b73b9;
+                border-radius: 5px;
+                padding: 5px;
+            }
+            .status_calib{
+                color: #3b73b9;
+                font-weight: bold;
+                font-size: 21px;
+                margin-bottom: 10px;
+            }
+            .action_calib{
+                font-size:18px;
+            }
+            .validate_calib{
+                margin-top: 10px;
+                background: #3b73b9;
+                color: white;
+                font-size: 18px;
+                width: 100px;
+                height: 30px;
+                border-radius: 5px;
+                box-shadow: 1px 1px 1px black;
+                padding-top: 8px;
+                cursor: pointer;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    
+    
+    .informations{
+        width: 100px;
+        margin-bottom: 10px;
+        height: 15px;
+        margin-top: 15px;
+        .zero{
+            float:left;
+            
+        }
+        .cent{
+            float:right;
+        }
+    }
+}
+

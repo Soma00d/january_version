@@ -1,0 +1,128 @@
+<div class="section_container">
+    <div class="title title_main">Welcome to Engineering mode</div>
+    <div class="bloc_container">
+        <div class="bloc">
+            <div class="title_bloc">Information</div>
+            <div class="info_bloc">
+                User SSO: 
+                <span class="input_zone blue">
+                    <input id="user_sso_input_E" class="inp1" type="text" value="" placeholder="User SSO"/>
+                </span><br>
+                Family:
+                <span class="input_zone blue">
+                    <select id="family_input_E">
+                        <option selected="selected"></option>
+                        <option class="elegance_option">ELEGANCE</option>
+                        <option class="omega_option">OMEGA</option>
+                    </select>
+                </span><br>
+                <span class="model_select hidden">
+                Model:
+                <span class="input_zone blue">
+                    <select id="model_input_E">
+                        <option selected="selected"></option>
+                        <option class="tssc_option">TSSC</option>
+                        <option class="smartbox_option">SMARTBOX</option>
+                        <option class="smarthandle_option">SMARTHANDLE</option>
+                    </select>
+                </span>
+                </span>
+                <br>
+                <span class="type_select hidden">
+                Type:
+                <span class="input_zone blue">
+                    <select id="type_input_E">
+                        <option selected="selected"></option>
+                        <option class="agila_option" >AGILA</option>
+                        <option>OTHER</option>
+                    </select>
+                </span>
+                </span>
+                <br>
+                <div id="family_choice" class="hidden"></div>
+                <div id="model_choice" class="hidden"></div>
+                <div id="type_choice" class="hidden"></div>
+            </div>
+            <div class="bouton_grey" id="send_info_hp_E">
+                Send
+            </div>
+        </div>
+        
+        <div class="bloc information tsui_img hidden">
+            <div class="title_bloc">TSUI Overview</div>
+            <img class="photo_tsui" src="">
+        </div>
+        
+        <div class="bloc information tsui_info hidden">
+            <div class="title_bloc name"></div>
+            <div class="info_bloc">
+                Boot Release <span class="boot_config blue"></span><br>
+                App. Software: <span class="sw_config blue"></span><br>                
+                FPGA Release <span class="fpga_config blue"></span><br>
+                Unique ID: <span class="unic_config blue"></span><br>
+            </div>
+        </div>
+        
+        <div class="bloc information hidden">
+            <div class="bouton toolbox" data-link="toolbox">
+                <img class="circle" src="images/circle_calib.png"><span class="text">Toolbox</span>
+            </div>                 
+        </div>
+                
+    </div>
+    
+    
+    
+</div>
+
+<script>
+$( "#family_input_E" )
+  .change(function() {
+    var str = "";
+    $( "#family_input_E option:selected" ).each(function() {
+      str += $( this ).text() + " ";
+    });
+    $( "#family_choice" ).text( str );
+    if(str.trim()== "ELEGANCE" ){
+        $(".model_select").removeClass("hidden");
+        $(".type_select").addClass("hidden");
+        $(".smarthandle_option").attr('disabled', 'test');
+    }
+    if(str.trim() == "OMEGA" ){
+        $(".model_select").removeClass("hidden");
+        $(".type_select").addClass("hidden");
+        $(".smarthandle_option").removeAttr('disabled');         
+    }
+  })
+  .trigger( "change" );
+$( "#model_input_E" )
+  .change(function() {
+    var str = "";
+    $( "#model_input_E option:selected" ).each(function() {
+      str += $( this ).text() + " ";
+    });
+    $( "#model_choice" ).text( str );
+    if(str.trim()== "TSSC" || str.trim()== "SMARTHANDLE"){
+        $(".type_select").addClass("hidden");
+        $( "#type_choice" ).text("");
+    }
+    if(str.trim() == "SMARTBOX" ){
+        $(".type_select").removeClass("hidden");
+        if($("#family_choice").html().trim() == "OMEGA"){
+            $(".agila_option").attr('disabled', 'test');
+        }else{
+            $(".agila_option").removeAttr('disabled');
+        }
+    }
+  })
+  .trigger( "change" );
+$( "#type_input_E" )
+  .change(function() {
+    var str = "";
+    $( "#type_input_E option:selected" ).each(function() {
+      str += $( this ).text() + " ";
+    });
+    $( "#type_choice" ).text( str );
+  })
+  .trigger( "change" );
+</script>

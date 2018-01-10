@@ -1,0 +1,222 @@
+#content_home{
+    position:relative;
+    .section_container{
+        .choose_section_repair{
+            text-align:center;
+            .bt_section{
+                color: white;
+                border-radius: 5px;
+                box-shadow: 3px 3px 3px black;
+                background: #3b73b9;
+                cursor: pointer;
+                position: relative;
+                margin-bottom: 10px;
+                display: inline-block;
+                padding: 20px;
+                font-size: 25px;
+                width: 150px;
+                text-align: center;
+                margin: 15px;
+                &:hover{
+                    background:#3895d2;
+                    box-shadow: 3px 3px 3px grey;
+                }
+                &.opacity_off{
+                    opacity: 0.5;
+                }
+            }
+        }
+        .bloc_container{
+            text-align: center;
+            .bloc{
+                text-align: left;
+                display: inline-block;
+                vertical-align: top;
+                width: 440px;
+                padding: 15px;
+                background: #f3f3f3;
+                min-height: 262px;
+                margin: 8px;
+                .info_bloc{
+                    font-size: 22px;
+                    line-height: 1.8;
+                    .input_zone{
+                        top:0px;
+                        input{
+                            border: none;
+                            height: 27px;
+                            border-bottom: 1px solid grey;
+                            background: #f3f3f3;
+                            width: 206px;
+                            padding-left: 15px;
+                            color:#3b73b9;
+                            font-size: 22px;
+                            font-family:inspira;
+                            &.inp1{
+                                margin-left: 50px;
+                            }
+                            &.inp2{
+                                margin-left: 16px;
+                            }
+                            &.inp3{
+                                margin-left: 3px;
+                            }
+                        }
+                    }
+                }
+                .photo_tsui{
+                    width: 100%;
+                    height: auto;
+                }
+                
+            }
+            .information_diag, .information_finaltest{
+                width: 285px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 15px;
+                margin-bottom: 25px;
+                display: block;
+                text-align: center;
+                .bouton{
+                    font-size: 25px;
+                    padding-top: 9px;
+                    height: 39px;
+                }
+            }
+            .commentary_bloc{
+                textarea{
+                    height: 153px;
+                    width: 100%;
+                }
+                .update_commentary_bt{
+                    box-shadow: 3px 3px 3px black;
+                    background: #3b73b9;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 201px;
+                    height: 28px;
+                    text-align: center;
+                    color: white;
+                    border-radius: 5px;
+                    font-size: 18px;
+                    padding-top: 6px;
+                    margin-top: 21px;
+                    cursor: pointer;
+                }
+            }
+            .history_search{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                .text_history{
+                    text-align: center;
+                    font-size: 23px;
+                    margin-bottom: 25px;
+                }
+                .history_bloc_line{
+                    font-size:20px;
+                    margin-bottom: 20px;
+                    &.btt{
+                        text-align:center;
+                    }
+                    input{
+                        border: none;
+                        height: 27px;
+                        border-bottom: 1px solid grey;
+                        background: #f3f3f3;
+                        width: 206px;
+                        padding-left: 15px;
+                        color: #3b73b9;
+                        font-size: 22px;
+                        font-family: inspira;
+                    }
+                    .history_pn_input{
+                        margin-left: 22px;
+                    }
+                    .history_sn_input{
+                        margin-left: 10px;
+                    }
+                    .history_sso_input{
+                        margin-left: 53px;
+                    }
+                    .history_bt_search{
+                        color: white;
+                        border-radius: 5px;
+                        box-shadow: 1px 1px 1px black;
+                        background: #3b73b9;
+                        cursor: pointer;
+                        font-size: 18px;
+                        outline: none;
+                        text-align: center;
+                        padding: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#content_homeE{
+    position:relative;
+    .section_container{
+        .bloc_container{
+            .bloc{
+                display: inline-block;
+                vertical-align: top;
+                width: 440px;
+                padding: 15px;
+                background: #f3f3f3;
+                min-height: 234px;
+                margin: 8px;
+                .info_bloc{
+                    font-size: 22px;
+                    line-height: 1.8;
+                    .input_zone{
+                        top:0px;
+                        input{
+                            border: none;
+                            height: 27px;
+                            border-bottom: 1px solid grey;
+                            background: #f3f3f3;
+                            width: 206px;
+                            padding-left: 15px;
+                            color:#3b73b9;
+                            font-size: 22px;
+                            font-family:inspira;
+                            &.inp1{
+                                margin-left: 50px;
+                            }
+                            &.inp2{
+                                margin-left: 16px;
+                            }
+                            &.inp3{
+                                margin-left: 3px;
+                            }
+                        }
+                    }
+                    #family_input_E{
+                        margin-left: 73px;
+                        height: 30px;
+                        width: 221px;
+                    }
+                    #model_input_E{
+                        margin-left: 79px;
+                        height: 30px;
+                        width: 221px;
+                    }
+                    #type_input_E{
+                        margin-left: 90px;
+                        height: 30px;
+                        width: 221px;
+                    }
+                }
+                .photo_tsui{
+                    width: 100%;
+                    height: auto;
+                }
+                
+            }
+        }
+    }
+}

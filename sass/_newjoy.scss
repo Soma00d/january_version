@@ -1,0 +1,45 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 23 oct. 2017, 11:17:25
+    Author     : jmollet
+*/
+
+
+    .joystick_container_new, .joystick_container_new_repair{
+        text-align:center;
+        .new_joystick{
+            margin-bottom: 20px;
+            display: inline-block;
+            vertical-align: top;
+            margin: 26px;
+            .area_visual{
+                background:url("../images/graph2.jpg")0 0 no-repeat;
+                background-size:cover;
+                .area_etalon{
+                    width: 100px;
+                    height: 100px;
+                    position: relative;
+                    top: 92px;
+                    left: 92px;
+                    .cursor{
+                        position:absolute;
+                        left:0%;
+                        top:0%;
+                    }
+                }
+                position:relative;
+                width:200px;
+                height:200px;
+            }
+            .name{
+                color: #3b73b9;
+                font-weight: bold;
+                font-style: italic;
+                margin-bottom: 5px;
+            }
+        }
+    }    
