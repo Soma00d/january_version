@@ -1,0 +1,108 @@
+<div class="adm_all_user_container">
+    <div class="title">Users Management Panel</div>
+    <div class="result_description">There are currently <span></span> users in database.</div>    
+    <div class="add_user_description"><img src="../images/admin/add.png"> Add a new user</div>    
+    <div class="array_all_user">
+        <div class="header_array_user">
+            <div class="head_item user_id">ID</div>
+            <div class="head_item user_name">Name</div>
+            <div class="head_item user_sso">SSO</div>
+            <div class="head_item user_description">Description</div>
+            <div class="head_item user_role">Permission</div>            
+            <div class="head_item user_is_admin">Administrator</div>
+            <div class="head_item user_delete">Actions</div>
+        </div>
+        <div class="content_array_user"></div>
+    </div>
+    
+    <!-- UPDATE USER ____________________________________________________________________-->
+    
+    <div class="overlay_udpdate">
+        <div class="update_user_box">
+            <div class="title">Update User ID <span class="id_user_span"></span></div>
+            <div class="form_update_user">
+                <div class="user_update_sct">
+                    <div class="description_form">User Name</div>
+                    <input type="text" class="update_user_name" value="">
+                </div>
+                <div class="user_update_sct">
+                    <div class="description_form">User SSO</div>
+                    <input type="text" class="update_user_sso" value="">
+                </div>
+                <div class="user_update_sct">
+                    <div class="description_form">User Description</div>
+                    <select class="update_user_description">
+                        <option value="Engineering">Engineering</option>
+                        <option value="Repair">Repair</option>
+                    </select>
+                </div>
+                <div class="user_update_sct">
+                    <div class="description_form">User Role (Access Permission)</div>
+                    <select class="update_user_role">
+                        <option value="INGE">Engineering</option>
+                        <option value="REPAIR_ALL">Repair All Section </option> 
+                        <option value="REPAIR_FINAL">Repair Test Final Section Only</option>
+                        <option value="REPAIR_DIAG">Repair Diagnostic Section Only</option>
+                    </select>
+                </div>
+                <div class="user_update_sct">
+                    <div class="description_form">User is Administrator ?</div>
+                    <select class="update_user_admin">
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                </div>
+                <div class="user_update_sct sct_btn">
+                    <div class="update_user_btn">Update</div>
+                    <div class="cancel_user_btn">Cancel</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- CREATE NEW USER _____________________________________________________________-->
+    
+    <div class="overlay_create">
+        <div class="create_user_box">
+            <div class="title">Create New User</div>
+            <div class="form_create_user">
+                <div class="user_create_sct">
+                    <div class="description_form">User Name</div>
+                    <input type="text" class="create_user_name" value="">
+                </div>
+                <div class="user_create_sct">
+                    <div class="description_form">User SSO</div>
+                    <input type="text" class="create_user_sso" value="">
+                </div>
+                <div class="user_create_sct">
+                    <div class="description_form">User Description</div>
+                    <select class="create_user_description">
+                        <option value="Engineering">Engineering</option>
+                        <option value="Repair">Repair</option>
+                    </select>
+                </div>
+                <div class="user_create_sct">
+                    <div class="description_form">User Role (Access Permission)</div>
+                    <select class="create_user_role">
+                        <option value="INGE">Engineering</option>
+                        <option value="REPAIR_ALL">Repair All Section </option> 
+                        <option value="REPAIR_FINAL">Repair Test Final Section Only</option>
+                        <option value="REPAIR_DIAG">Repair Diagnostic Section Only</option>
+                    </select>
+                </div>
+                <div class="user_create_sct">
+                    <div class="description_form">User is Administrator ?</div>
+                    <select class="create_user_admin">
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                </div>
+                <div class="user_create_sct sct_btn">
+                    <div class="create_user_btn">Create</div>
+                    <div class="create_cancel_user_btn">Cancel</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>

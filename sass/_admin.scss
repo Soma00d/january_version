@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.overlay_admin_login{
+    position:relative;
+    width:100%;
+    height:700px;
+    background:url("../images/admin/bg_admin.jpg")0 0 no-repeat; 
+    background-size:cover;
+    .authenticate_admin{
+        background: #3b73b9;
+        color: white;
+        text-align: center;
+        width: 400px;
+        padding: 15px;
+        position:absolute;
+        left:10%;
+        top:100px;
+        box-shadow: 0px 0px 13px grey;
+        .title{
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .text_login{
+            font-size: 17px;
+            margin-bottom: 10px;
+        }
+        #username_admin{
+            margin-bottom: 15px;
+            height: 25px;
+        }
+        #sub_bt{
+            background: white;
+            width: 75px;
+            border: none;
+            height: 20px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 1px black;
+            cursor: pointer;
+        }
+    }
+}
+
+#main_admin_content{
+    background: #f6f6f6;
+}
+.main_admin_panels{
+    display:inline-block;
+    vertical-align:top;
+    width:79%; 
+    min-height: 700px;
+    background: #f6f6f6;
+    .page_content{
+        padding:15px;
+        .title{
+            text-align: center;
+            font-size: 25px;
+            margin-top: 20px;
+        }
+    }
+}
+.main_admin_menu{
+    display:inline-block;
+    vertical-align:top;
+    width:20%;
+    box-shadow: 7px 0px 15px -8px black;
+    min-height:700px;
+    background:white;
+
+    ul {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    h2 {
+        text-align: center;
+        margin: 20px auto;
+        color: #fff;
+    }
+
+    .accordion-menu {
+        margin:0;
+        width:100%;
+        background:white;
+    }
+    .accordion-menu li.open .dropdownlink {
+        color: #3b73b9;
+        .fa-chevron-down {
+            transform: rotate(180deg);
+        }
+    }
+    .accordion-menu li:last-child .dropdownlink {
+        border-bottom: 0;
+    }
+    .dropdownlink {
+        cursor: pointer;
+        display: block;
+        padding: 15px 15px 15px 45px;
+        font-size: 18px;
+        border-bottom: 1px solid #ccc;
+        color: #212121;
+        position: relative;
+        transition: all 0.4s ease-out;
+        img{
+            width: 25px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        i {
+            position: absolute;
+            top: 17px;
+            left: 16px;
+        }
+        .fa-chevron-down {
+            right: 12px;
+            left: auto;
+        }
+    }
+
+    .submenuItems {
+        display: none;
+        color:black;
+        background: #e8e8e8;
+        li {
+            border-bottom: 1px solid #B6B6B6;
+        }
+    }
+
+    .submenuItems a {
+        display: block;
+        background: #e8e8e8;
+        padding: 12px 12px 12px 45px;
+        transition: all 0.4s ease-out;
+        color:black;
+        &:hover {
+            background-color: #3b73b9;
+            color: white;
+        }
+    }
+
+
+}
+
+#adm_content_user{
+    position: relative;
+    .add_user_description{
+        margin-top: 20px;
+        cursor: pointer;
+        padding: 5px;
+        border: 1px solid black;
+        border-radius: 5px;
+        text-align: center;
+        width: 149px;
+        background: white;
+        font-size: 14px;
+        img{
+            width: 12px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+    }
+    .overlay_udpdate, .overlay_create{
+        position: absolute;
+        background: rgba(0,0,0, 0.5);
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 700px;
+        z-index: 0;
+        display:none;
+        .update_user_box, .create_user_box{
+            width: 400px;
+            background: #f5f5f5;
+            padding: 15px;
+            padding-top: 0px;
+            border-radius: 5px;
+            border: 7px solid #3b73b9;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 75px;
+            .form_update_user, .form_create_user{
+                .user_update_sct, .user_create_sct{
+                    margin-top: 15px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 75%;
+                }
+                .description_form{
+                    font-weight: bold;
+                    font-style: italic;
+                    font-size: 14px;
+                    color: #3b73b9;
+                    margin-bottom: 5px;
+                }
+                input{
+                    width: 100%;
+                    height: 25px;
+                }
+                select{
+                    width: 100%;
+                    height: 25px;
+                }
+                .sct_btn{
+                    text-align: center;
+                    margin-top: 25px;
+                    margin-bottom: 15px;
+                    .update_user_btn, .create_user_btn{
+                        width: 90px;
+                        background: #3b73b9;
+                        color: white;
+                        padding: 2px;
+                        text-align: center;
+                        cursor: pointer;
+                        box-shadow: 1px 1px 1px black;
+                        display: inline-block;
+                        vertical-align: top;
+                    }
+                    .cancel_user_btn, .create_cancel_user_btn{
+                        width: 90px;
+                        background: #c7ccd2;
+                        color: black;
+                        padding: 2px;
+                        text-align: center;
+                        cursor: pointer;
+                        box-shadow: 1px 1px 1px black;
+                        display: inline-block;
+                        vertical-align: top;
+                        margin-left: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .adm_all_user_container{
+        .result_description{
+            font-style: italic;
+            span{
+                font-weight: bold;
+                font-size: 18px;
+                color: #3b73b9;
+            }
+        }
+    }
+    .array_all_user{
+        margin-top: 25px;
+        width: 100%;
+        .header_array_user{
+            .head_item{
+                background: #3b73b9;
+                display: inline-block;
+                vertical-align: top;
+                width: 13.5%;
+                text-align: center;
+                border: 1px solid white;
+                color: white;
+                padding: 1px;
+                margin-right:-2px;
+            }
+        }
+        .content_array_user{
+            .line_user{
+                .user_item{
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 13.5%;
+                    text-align: center;
+                    border: 1px solid white;
+                    padding: 1px;
+                    margin-right: 1.7px;
+                    font-size: 15px;
+                    height: 23px;
+                    &.user_is_admin{
+                        padding-top: 3px;
+                    }
+                    &.user_delete{
+                        padding-top: 3px;
+                    }
+                }
+                &:nth-child(even) .user_item{
+                    background-color:#cde1f0;
+                }
+                &:hover .user_item{
+                    border-bottom:1px solid #3b73b9;
+                    border-top:1px solid #3b73b9;
+                }
+                .check_admin{
+                    width: 15px;
+                }
+                .modif_admin{
+                    margin-right: 30%;
+                    cursor: pointer; 
+                    width:15px;
+                }
+                .delete_admin{
+                    cursor: pointer;
+                    width:15px;
+                }            
+            }
+        }
+    }
+}

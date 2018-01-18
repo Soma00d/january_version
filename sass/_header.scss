@@ -1,4 +1,4 @@
-#header{
+#header, #header_admin{
     .head_container{
         background:#3b73b9;
         color:white;
@@ -9,10 +9,11 @@
         top:0;
         left:0;
         .head_content{
-            display:inline-block;
+            display:inline-block; 
             vertical-align:top;
             width:1000px;
             position:relative;
+            z-index: 99;
             .head_title{
                 position: absolute;
                 top: 20px;
@@ -56,5 +57,14 @@
                 cursor: pointer;
             }
         }
+    }
+}
+#header_admin{
+    .head_container{
+        .head_content{
+            .head_title{
+                font-size: 25px;
+            }
+        }        
     }
 }
